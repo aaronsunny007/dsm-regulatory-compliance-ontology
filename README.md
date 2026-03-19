@@ -44,10 +44,11 @@ The ontology successfully performs automated classification of environmental har
 ## Screenshots
 
 ### Class Hierarchy
-![Class](screenshots)
+![Class](Screenshot 2026-03-19 171519.png)
 
 ### Reasoning Result
-![Reasoning](screenshots)
+![Reasoning](Screenshot 2026-03-19 171519.png
+)
 
 ## Future Work
 - Integration with AI/LLM-based compliance assistants
