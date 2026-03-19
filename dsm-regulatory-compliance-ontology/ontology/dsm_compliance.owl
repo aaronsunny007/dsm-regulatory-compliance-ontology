@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="urn:absolute:h/"
+     xml:base="urn:absolute:h/"
+     xmlns:ont="http://example.invalid/ontologies/ont.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.invalid/ontologies/ont.owl#Plume_Toxicity1 -->
+
+    <owl:ObjectProperty rdf:about="http://example.invalid/ontologies/ont.owl#Plume_Toxicity1">
+        <rdfs:subPropertyOf rdf:resource="http://example.invalid/ontologies/ont.owl#causes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.invalid/ontologies/ont.owl#causes -->
+
+    <owl:ObjectProperty rdf:about="http://example.invalid/ontologies/ont.owl#causes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.invalid/ontologies/ont.owl#isCompensatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://example.invalid/ontologies/ont.owl#isCompensatedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.invalid/ontologies/ont.owl#performedBy -->
+
+    <owl:ObjectProperty rdf:about="http://example.invalid/ontologies/ont.owl#performedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.invalid/ontologies/ont.owl#isForeseen -->
+
+    <owl:DatatypeProperty rdf:about="http://example.invalid/ontologies/ont.owl#isForeseen">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.invalid/ontologies/ont.owl#isForseen -->
+
+    <owl:DatatypeProperty rdf:about="http://example.invalid/ontologies/ont.owl#isForseen">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.invalid/ontologies/ont.owl#BenthicHabitatLoss -->
+
+    <owl:Class rdf:about="http://example.invalid/ontologies/ont.owl#BenthicHabitatLoss"/>
+    
+
+
+    <!-- http://example.invalid/ontologies/ont.owl#CompensableHarm -->
+
+    <owl:Class rdf:about="http://example.invalid/ontologies/ont.owl#CompensableHarm">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://example.invalid/ontologies/ont.owl#EnvironmentalHarm"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://example.invalid/ontologies/ont.owl#isForeseen"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://example.invalid/ontologies/ont.owl#Contractor -->
+
+    <owl:Class rdf:about="http://example.invalid/ontologies/ont.owl#Contractor"/>
+    
+
+
+    <!-- http://example.invalid/ontologies/ont.owl#EnvironmentalCompensationFund -->
+
+    <owl:Class rdf:about="http://example.invalid/ontologies/ont.owl#EnvironmentalCompensationFund"/>
+    
+
+
+    <!-- http://example.invalid/ontologies/ont.owl#EnvironmentalHarm -->
+
+    <owl:Class rdf:about="http://example.invalid/ontologies/ont.owl#EnvironmentalHarm"/>
+    
+
+
+    <!-- http://example.invalid/ontologies/ont.owl#MiningActivity -->
+
+    <owl:Class rdf:about="http://example.invalid/ontologies/ont.owl#MiningActivity"/>
+    
+
+
+    <!-- http://example.invalid/ontologies/ont.owl#PlumeToxicity -->
+
+    <owl:Class rdf:about="http://example.invalid/ontologies/ont.owl#PlumeToxicity"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.invalid/ontologies/ont.owl#Benthic_Habitat_Loss1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.invalid/ontologies/ont.owl#Benthic_Habitat_Loss1">
+        <rdf:type rdf:resource="http://example.invalid/ontologies/ont.owl#BenthicHabitatLoss"/>
+        <owl:topDataProperty rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:topDataProperty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.invalid/ontologies/ont.owl#Contractor1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.invalid/ontologies/ont.owl#Contractor1">
+        <rdf:type rdf:resource="http://example.invalid/ontologies/ont.owl#Contractor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.invalid/ontologies/ont.owl#ECF1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.invalid/ontologies/ont.owl#ECF1">
+        <rdf:type rdf:resource="http://example.invalid/ontologies/ont.owl#EnvironmentalCompensationFund"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.invalid/ontologies/ont.owl#MiningActivity1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.invalid/ontologies/ont.owl#MiningActivity1">
+        <rdf:type rdf:resource="http://example.invalid/ontologies/ont.owl#MiningActivity"/>
+        <ont:causes rdf:resource="http://example.invalid/ontologies/ont.owl#Plume_Toxicity1"/>
+        <ont:performedBy rdf:resource="http://example.invalid/ontologies/ont.owl#Contractor1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.invalid/ontologies/ont.owl#Plume_Toxicity1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.invalid/ontologies/ont.owl#Plume_Toxicity1">
+        <rdf:type rdf:resource="http://example.invalid/ontologies/ont.owl#PlumeToxicity"/>
+        <ont:isCompensatedBy rdf:resource="http://example.invalid/ontologies/ont.owl#ECF1"/>
+        <ont:isForeseen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ont:isForeseen>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
